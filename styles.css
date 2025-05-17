@@ -134,16 +134,6 @@ nav a:hover {
 }
 
 /* === HERO === */
-.hero {
-  background: url('https://source.unsplash.com/1600x900/?cozy,cafe') center/cover no-repeat;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 2rem 1rem;
-  position: relative;
-}
 
 .hero h1 {
   font-size: 2rem;
@@ -154,12 +144,13 @@ nav a:hover {
   background-image: url('https://imgur.com/iWuDlDZ.jpg');
   background-size: cover;
   background-position: center;
-  height: 400px;
+  height: 300px;
   color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 2rem 1rem;
+  text-align: center;
+  display: grid;
+  justify-content: center; /* Center horizontally */
+  align-items: center;     /* Center vertically */
   text-align: center;
 }
 
@@ -497,4 +488,3 @@ padding-left: 1rem;
 padding-right: 1rem;
 }
 }
-
