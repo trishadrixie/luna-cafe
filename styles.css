@@ -287,11 +287,12 @@ section {
   position: relative;
   text-align: center;
   cursor: pointer;
-  padding: 1.5rem;
+  padding: 1.6rem;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
   max-width: 350px;
   margin: 0 auto;
-  height: auto;
+  height: auto; /* Let content drive height */
+
 }
 
 .menu-card:hover {
@@ -301,18 +302,19 @@ section {
 
 .menu-image {
   width: 100%;
-  height: 150px;
+  height: 180px;
+  min-height: 180px;
   object-fit: cover;
 }
 
 .menu-content {
-  padding: 1rem;
+  padding: 0.8rem 1rem;
   background: #fff;
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  transform: translateY(100%);
+  transform: translateY(80%); /* ✅ less hover distance = smaller look */
   transition: transform 0.3s ease-in-out;
 }
 
@@ -321,21 +323,21 @@ section {
 }
 
 .menu-content h3 {
-  font-size: 1.2rem;
-  color: #2d2d2d;
-  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
 }
 
 .price {
-  font-size: 1.1rem;
-  color: #8D9774;
-  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
 }
 
 .description {
-  font-size: 0.9rem;
-  color: #666;
+  font-size: 0.75rem;
+  line-height: 1.2;
+  max-height: 2.3em;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
+
 
 /* === NEWSLETTER === */
 .newsletter {
@@ -495,3 +497,4 @@ padding-left: 1rem;
 padding-right: 1rem;
 }
 }
+
