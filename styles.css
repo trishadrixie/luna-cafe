@@ -488,3 +488,13 @@ padding-left: 1rem;
 padding-right: 1rem;
 }
 }
+
+.hint-text {
+  display: block;
+  margin-top: 6px;
+  font-size: 0.9rem;
+  color: #FFFDE9;
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: center;
+  opacity: 0.85;
+}
